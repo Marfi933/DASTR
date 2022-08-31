@@ -14,6 +14,7 @@ insert - 1, 2, 3, 4, 5, 6, 7
 delete smallest is anagolic 
 
 RBT
+
 ![image](https://user-images.githubusercontent.com/50024077/187701702-30e08920-f5b7-4b90-b0cb-f867a653e01f.png)
 
 insert - 5, 3, 8, 1, 4, 6, 9, 7, 10
