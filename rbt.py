@@ -1,4 +1,5 @@
 import sys
+import random
 BLACK = "black"
 RED = "red"
 
@@ -235,4 +236,26 @@ class RedBlackTree:
     def print_tree(self):
         self.__print_helper(self.root, "", True)
 
+def rbt_test():
+    bst = RedBlackTree()
+    node = [5,3,8,1,4,6,9,7,10]
+    for i in node:
+        bst.insert(i)
+    bst.print_tree()
+    print("\nAfter deleting an element")
+    bst.delete(5)
+    bst.print_tree()
 
+def rbt_random_test():
+    bst = RedBlackTree()
+    keys = [random.randint(0,100) for i in range(10)] # fill the list with random numbers
+    for i in keys:
+        print("Inserting: ", i)
+        bst.insert(i)
+    bst.print_tree()
+    delete = keys[random.randint(0,9)] # pick a random number to delete
+    print("\nAfter deleting an element ", delete)
+    bst.delete(delete)
+    bst.print_tree()
+
+rbt_test()
